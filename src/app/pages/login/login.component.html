@@ -2,5 +2,27 @@
     title="Sign-in into your account"
     primaryBtnText="Sign-in"
     secondaryBtnText="Sign-up"
+    (submit)="submit()"
+    (navigate)="navigate()"
 >
+    <form [formGroup]="loginForm">
+        <app-primary-input
+            formControlName="username"
+            inputName="username"
+            type="text"
+            label="Username"
+            placeholder="john.doe"
+        >
+            <img src="/email-icon.svg" />
+        </app-primary-input>
+        <app-primary-input
+            formControlName="password"
+            inputName="password"
+            type="password"
+            label="Password"
+            placeholder="Type your password"
+        >
+            <img src="/password-icon.svg" />
+        </app-primary-input>
+    </form>
 </app-default-form-layout>
