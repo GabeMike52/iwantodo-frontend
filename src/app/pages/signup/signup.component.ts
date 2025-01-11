@@ -65,9 +65,6 @@ export class SignupComponent {
                         'Unexpected Error while creating user'
                     ),
             });
-        setTimeout(() => {
-            this.navigate();
-        }, 3000);
     }
 
     navigate() {
