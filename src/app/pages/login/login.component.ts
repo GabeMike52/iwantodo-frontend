@@ -48,7 +48,12 @@ export class LoginComponent {
         this.loginService
             .login(this.loginForm.value.username, this.loginForm.value.password)
             .subscribe({
-                next: () => this.toastService.success('Signed in successfully'),
+                next: () => {
+                    this.toastService.success('Signed in successfully');
+                    setTimeout(() => {
+                        this.goToHome();
+                    }, 3000);
+                },
                 error: () =>
                     this.toastService.error(
                         'Unexpected Error! Try again later'
@@ -58,5 +63,9 @@ export class LoginComponent {
 
     navigate() {
         this.router.navigate(['signup']);
+    }
+
+    goToHome() {
+        this.router.navigate(['home']);
     }
 }

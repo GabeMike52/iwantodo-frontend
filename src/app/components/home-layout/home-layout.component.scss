@@ -1,0 +1,46 @@
+@import "../../../styles/variables.scss";
+section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    margin: 45px 0;
+    width: 100%;
+    height: 100%;
+    gap: 15px;
+
+    .add-new-task-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+
+        gap: 15px;
+    }
+
+    input {
+        height: 100%;
+        margin: 12px 0 12px 50px;
+        padding: 12px 0 12px 10px;
+
+        background-color: $bg-color;
+        border: none;
+        border-radius: 8px;
+    }
+
+    button {
+        width: 40px;
+        height: 42px;
+        margin-right: 25px;
+
+        background-color: $primary-color;
+        border: none;
+        border-radius: 8px;
+        color: white;
+        font-size: larger;
+        font-weight: 500;
+        cursor: pointer;
+    }
+}
