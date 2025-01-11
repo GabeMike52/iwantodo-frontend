@@ -54,8 +54,12 @@ export class SignupComponent {
                 this.singupForm.value.password
             )
             .subscribe({
-                next: () =>
-                    this.toastService.success('User created successfully'),
+                next: () => {
+                    this.toastService.success('User created successfully');
+                    setTimeout(() => {
+                        this.navigate();
+                    }, 3000);
+                },
                 error: () =>
                     this.toastService.error(
                         'Unexpected Error while creating user'
