@@ -1,4 +1,13 @@
-# IwantodoFrontend
+# IWanToDo
+
+Simple to-do app for the web, the backend was written in Java, using Spring Boot, while the frontend is written in TypeScript using the Angular Framework
+
+## Images
+
+![alt text](public/demo1.png "Sign-in page")
+![alt text](public/demo2.png "Sign-up page")
+
+# Angular Information
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.0.6.
 
